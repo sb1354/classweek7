@@ -1,0 +1,39 @@
+<style>
+
+  button{
+    border: 10x solid black;
+    padding: 20px 30px;
+    background-color: pink;
+    cursor: pointer;
+  }
+
+</style>
+
+<body>
+  <button class="doorbell">hello
+  </button>
+
+
+  <a href="mailto:" target="_blank"></a>
+
+  <script>
+
+  function bgChange(){
+   nn.get('.doorbell').style.backgroundColor = nn.randomColor()
+   document.body.style.backgroundColor = 'pink'
+    const text = nn.get('.dorbell').textContent
+    if(text === 'hello'/*===is a question*/){
+      nn.get('.doorbell').textContent = nn.random()
+    }
+  }
+    
+  let button = document.querySelector('.doorbell')
+  button.style.border = '20px solid red'
+  button.addEventListener('click', bgChange)
+  /*nn.get('.doorbell').on('click',bgChange) 
+  document.body.style.backgroundColor=nn.randomColor() */
+
+
+  </script>
+
+</body>
